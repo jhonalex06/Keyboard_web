@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0 12% 0 12%;
+  }
+  
+body {
+display: flex;
+flex-direction: column;
+}
+
+#wrapper {
+flex: 1;
+display: flex;
+flex-direction: column;
+padding: 1rem;
+gap: 1rem;
+overflow: auto;
+}
+
+#actions {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+#page {
+border: 2px solid;
+padding: 2rem;
+flex: 1;
+min-height: 100px;
+border-radius: 50px;
+overflow-y: auto;
+}
+
+#keyboard {
+display: flex;
+justify-content: space-between;
+gap: 2rem;
+align-items: flex-start;
+}
+
+#keyboard > div {
+display: flex;
+flex-direction: column;
+gap: 0.3rem;
+}
+
+#keyboard-left {
+flex: 1;
+justify-content: flex-start;
+}
+
+#keyboard-middle {
+flex: 4;
+justify-content: center;
+}
+
+#keyboard-right {
+flex: 1;
+justify-content: flex-end;
+}
+
+#keyboard-middle button,
+#keyboard-right button{
+height:70px;
+width:70px;
+background-color: #565d66;
+font-size : 16px;
+font-weight: bold;
+border: 2px solid black;
+border-radius: 50px;
+color: white;
+}
+
+.keyboard-row {
+display: flex;
+gap: 0.3rem;
+justify-content: inherit;
+}
+
+.botton-style {
+    background-color: #f1a662 !important;
+    color: red;
+}
+
+#keyboard-middle button.keyboard-left{
+height:70px;
+width:145px;
+background-color: #debd43;
+color: white;
+}
+
+#keyboard-middle button.space{
+    height:70px;
+    width:444px;
+    background-color: #debd43;
+    color: white;
+}
+
+.download {
+display: none;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+  
+button:hover {
+    background-color: #c1c1c1;
+    color: white;
+    box-shadow: 2px 2px #666;
+    transform: translateY(4px);
+}
